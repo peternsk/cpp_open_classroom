@@ -1,26 +1,25 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 int main()
 {
-	int ageUtilisateur;
-	string paysOrigine;
+	int 	bonResultat(36);
+	int 	resultUtilisateur;
+	string 	nomUtilisater;
 
-	cout << "Quel est votre age ? " << endl;
+	cout << "quelle est votre nom et prenom" << endl;
+	getline(cin, nomUtilisater);
 
-	cin >> ageUtilisateur;
+	cout << "quelle est le resultat de l'opperation suivate : 3 x 12 ? " << endl;
+	cin >> resultUtilisateur;
 
-	cout << "vous avez : " << ageUtilisateur << " ans" << endl;
-
-	cout << "quelle est votre pays d'origine ? " << endl;
-
-	cin >> paysOrigine;
-	if(paysOrigine == "zambie")
-		cout << "quel beau pays ! Lusaka est ma ville prefere !!" << endl;
+	if(resultUtilisateur == bonResultat)
+		cout << "bravo ! " << bonResultat << " est la bonne reponse !" << endl;
+	else if((resultUtilisateur - bonResultat == 1) || (resultUtilisateur - bonResultat == -1))
+		cout << "tu es proche de la reponse" << endl;
 	else
-		cout << "Je reve de visiter la " << paysOrigine << " dites moi en plus svp !" << endl;
+		cout << nomUtilisater << " tu es trop bete !" << endl;
 
-	return(0);
+	return 0;
 }
