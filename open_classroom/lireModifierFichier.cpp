@@ -26,15 +26,57 @@
 //     return 0;
 // }
 
-int main()
+// int main()
+// {
+//     std::string const myfile("text.txt");
+//     std::ofstream monflux(myfile.c_str(), std::ios::app);
+
+//     if(monflux){
+//         monflux << "bonjour comment ca va" << std::endl;
+//         monflux << 20.118 << std::endl;
+//         monflux << "helloworld." << std::endl;
+//         int age(29);
+//         monflux << "j'ai " << age << " ans" << std::endl;
+//         monflux << "comment on appelle le mode de communication d'un programme avec l'exterieur." << std::endl;
+//     }
+//     else{
+//         std::cout << "ERREUR : impossible d'ouvrir le fichier." << std::endl;
+//     }
+// }
+
+/******************************************/
+/**      Different type d'ouverture      **/
+/******************************************/
+
+// pour ecrire a la fin d'un fichier il faut il faut specifer lors de louverture 
+// ofstream monFlux(nomFichier.c_str(), ios::app);
+// toute la section de mon if(monflux) se rajoute a la fin.
+
+
+
+/******************************************/
+/**           Lisez un fichier           **/
+/******************************************/
+
+// ofstream pour ecrire ==> ifstream pour lire
+
+int main(void)
 {
-    std::string const myfile("text.txt");
-    std::ofstream monflux(myfile.c_str());
+    std::ifstream fileToRead("text.txt");
 
-    if(monflux){
-        monflux << "bonjour comment ca va"
-    }
-    else{
-
+    if(fileToRead){
+        std::cout << "file open and ready for execution" << std::endl;
+        std::string line;
+        std::getline(fileToRead, line);
+        std::cout << line << std::endl;
+    }else{
+        std::cout << "ERREUR : impossible d'ouvrir le fichier." << std::endl;
     }
 }
+
+/*      les trois manieres de lire un fichier
+
+    getline();
+    >>
+    get();
+*/
