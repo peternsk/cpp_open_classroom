@@ -8,3 +8,9 @@
 #include <cstdlib>
  
 using namespace std;
+
+int main(void)
+{
+    string motMystere, motUtilisateur;
+    string *motMelange(nullptr);
+}
