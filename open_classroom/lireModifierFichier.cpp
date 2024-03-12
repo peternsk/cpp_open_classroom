@@ -15,6 +15,12 @@ int main()
     //Déclaration d'un flux permettant d'écrire dans le fichier
     // C:/Nanoc/scores.txt
 
-    std::ofstream monFichier(nomFichier.c_str());
+    std::ofstream monFlux(nomFichier.c_str());
+    if(monFlux)
+        std::cout << "all good" << std::endl;
+    else
+        std::cout << "ERREUR : ouverture de fichier" << std::endl;
+
+    //apres la verificartion on peu
     return 0;
 }
