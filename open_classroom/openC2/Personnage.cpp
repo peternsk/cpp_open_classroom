@@ -24,3 +24,8 @@ void Personnage::boirePotionDeVie(int quantitePotion)
         m_vie = 100;
     }
 }
+
+void Personnage::changerArme(std::string nomNouvelleArme, int degatsNouvelleArme){
+	m_nomArme = nomNouvelleArme;
+    m_degatArme = degatsNouvelleArme;
+}

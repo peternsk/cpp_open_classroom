@@ -62,4 +62,9 @@ int main(void)
 /************************************************/
 /**        le principe d'encapsulation         **/
 /************************************************/
+/*
+	l'encapsulation cest de mettre des attribut ou des membre en prive ou publique.
+*/
+
+
 
