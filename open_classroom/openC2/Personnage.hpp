@@ -7,11 +7,12 @@ class Personnage
 {
     //methodes
     public:
+        Personnage(); //constructeur
         void recevoirDegats(int nbDegats);
         void attaquer(Personnage &cible);
         void boirePotionDeVie(int quantitePotion);
         void changerArme(std::string nomNouvelleArme, int degatsNouvelleArme);
-        bool estVivant();
+        bool estVivant() const;
         
     //attributs
     private:
