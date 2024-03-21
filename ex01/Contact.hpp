@@ -18,11 +18,7 @@ class	Contact{
 
 	public:
 		Contact();
-		void	setToNull(std::string& toSet);
-		// void	setLastName(std::string lasttName);
-		// void	setNicktName(std::string nicktName);
-		// void	setPhoneNumbert(std::string phoneNumber);
-		// void	setDarkestSecret(std::string darkestSecret);
+		
 
 
 };
