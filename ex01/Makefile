@@ -2,7 +2,7 @@
 #**  			  BASIC VARIABLES			   **#
 #************************************************#
 
-NAME 	= megaphone
+NAME 	= myPhoneBook
 CC 		= c++
 FLAGDS	= -Wall -Werror -Wextra -std=c++98
 RM		= rm -rf
@@ -11,7 +11,7 @@ RM		= rm -rf
 #**  				 FUNCTIONS				   **#
 #************************************************#
 
-SRC 	=	megaphone.cpp
+SRC 	=	main.cpp
 OBJ     =   $(SRC:.cpp=.o)
 
 #************************************************#
